@@ -28,7 +28,7 @@ console.log(bigliettoBase, typeof(bigliettoBase));
         const eta = etaInput.value;
         console.log(eta)
 
-        const bigliettoKm = (bigliettoBase.value * km);
+        const bigliettoKm = (bigliettoBase * km);
         console.log(bigliettoKm, typeof (bigliettoKm));
 
         let bigliettoScontato = bigliettoKm 
