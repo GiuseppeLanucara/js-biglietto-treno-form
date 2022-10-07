@@ -14,9 +14,6 @@ const bigliettoBase = 0.21;
 console.log(bigliettoBase, typeof(bigliettoBase));
 
 
-
-
-
     button.addEventListener("click", function () {
         // Prendo il valore dell'input
         const firstName = firstNameInput.value;
@@ -40,4 +37,5 @@ console.log(bigliettoBase, typeof(bigliettoBase));
             }
             console.log(bigliettoScontato, typeof(bigliettoScontato));
 
-        document.getElementById("price").innerHTML= `<span>Il costo del biglietto è</span> ${bigliettoScontato} ${"<span>euro</span>"}`});
+        document.getElementById("price").innerHTML= `<span>Il costo del biglietto è</span> ${bigliettoScontato} ${"<span>euro</span>"}`
+    });
