@@ -4,7 +4,7 @@ const lastName = document.getElementById("cognome");
 
 const km = parseInt (document.getElementById("km"));
 
-const eta = parseInt (document.getElementById("eta"));
+const eta = (document.getElementById("eta"));
 
 const button = document.getElementById("submit");
 
