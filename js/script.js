@@ -17,12 +17,6 @@ const bigliettoKm = (bigliettoBase * km);
 console.log(bigliettoKm, typeof (bigliettoKm));
 
 let bigliettoScontato = bigliettoKm 
-if (eta <= 18 ) {
-    bigliettoScontato = bigliettoKm * 20 / 100; 
-} else if (eta >65) {
-    bigliettoScontato = bigliettoKm * 40 / 100;
-    }
-    console.log(bigliettoScontato, typeof(bigliettoScontato));
 
     button.addEventListener("click", function () {
         // Prendo il valore dell'input
@@ -33,6 +27,13 @@ if (eta <= 18 ) {
         const km = kmInput.value;
         console.log(km);
         const eta = etaInput.value;
-        console.log(eta)});
+        console.log(eta)
 
-        document.getElementById("price").innerHTML= `<span>Il costo del suo biglietto è</span> ${bigliettoScontato} ${"<span>euro</span>"}`;
+        if (eta <= 18 ) {
+            bigliettoScontato = bigliettoKm * 20 / 100; 
+        } else if (eta >65) {
+            bigliettoScontato = bigliettoKm * 40 / 100;
+            }
+            console.log(bigliettoScontato, typeof(bigliettoScontato));
+
+        document.getElementById("price").innerHTML= `<span>Il costo del suo biglietto è</span> ${bigliettoScontato} ${"<span>euro</span>"}`});
