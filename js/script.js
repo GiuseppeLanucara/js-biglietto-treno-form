@@ -1,14 +1,14 @@
-const firstName = document.getElementById("nome");
+const firstNameInput = document.getElementById("nome");
 
-const lastName = document.getElementById("cognome");
+const lastNameInput = document.getElementById("cognome");
 
-const km = parseInt (document.getElementById("km"));
+const kmInput = parseInt (document.getElementById("km"));
 
-const eta = (document.getElementById("eta"));
+const etaInput = (document.getElementById("eta"));
 
 const button = document.getElementById("submit");
 
-console.log(firstName, lastName,km,eta,button, typeof(firstName, lastName,km,eta,button));
+console.log(firstNameInput, lastNameInput,kmInput,etaInput,button, typeof(firstNameInput, lastNameInput,kmInput,etaInput,button));
 
 const bigliettoBase = 0.21;
 console.log(bigliettoBase, typeof(bigliettoBase));
@@ -23,3 +23,14 @@ if (eta <= 18 ) {
     bigliettoScontato = bigliettoKm * 40 / 100;
     }
     console.log(bigliettoScontato, typeof(bigliettoScontato));
+
+    button.addEventListener("click", function () {
+        // Prendo il valore dell'input
+        const firstName = FirsNameInput.value;
+        console.log(firstName);
+        const lastName = lastNameInput.value;
+        console.log(lastName);
+        const km = kmInput.value;
+        console.log(km);
+        const eta = etaInput.value;
+        console.log(eta)});
