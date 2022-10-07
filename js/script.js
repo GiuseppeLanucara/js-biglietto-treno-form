@@ -34,3 +34,5 @@ if (eta <= 18 ) {
         console.log(km);
         const eta = etaInput.value;
         console.log(eta)});
+
+        document.getElementById("price").innerHTML= `<span>Il costo del suo biglietto è</span> ${bigliettoScontato} ${"<span>euro</span>"}`;
