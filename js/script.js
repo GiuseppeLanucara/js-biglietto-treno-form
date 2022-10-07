@@ -26,7 +26,7 @@ if (eta <= 18 ) {
 
     button.addEventListener("click", function () {
         // Prendo il valore dell'input
-        const firstName = FirsNameInput.value;
+        const firstName = firstNameInput.value;
         console.log(firstName);
         const lastName = lastNameInput.value;
         console.log(lastName);
