@@ -37,5 +37,5 @@ console.log(bigliettoBase, typeof(bigliettoBase));
             }
             console.log(bigliettoScontato, typeof(bigliettoScontato));
 
-        document.getElementById("price").innerHTML= `<span>Il costo del biglietto è</span> ${bigliettoScontato} ${"<span>euro</span>"}`
+        document.getElementById("price").innerHTML= `Il costo del biglietto è ${bigliettoScontato.toFixed(2)} ${"<span>euro</span>"}`
     });
